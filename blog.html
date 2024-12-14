@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GCTU Event Booking - Book your preferred event venues with ease.">
+  <meta name="keywords" content="GCTU, Venue Booking, Event Halls, Auditorium, Great Hall, Forecourt">
+  <meta name="author" content="BootstrapMade">
+  <title>Book a Venue | GCTU Event Booking System</title>
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header .sitename {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    header a {
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    header a:hover {
+      color: #ffcc00;
+    }
+
+    .navmenu a {
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .navmenu a:hover {
+      color: #ffcc00;
+    }
+
+    .page-title {
+      background-color: #ffcc00;
+      padding: 30px 0;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .container {
+      margin-top: 30px;
+    }
+
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      overflow: hidden;
+    }
+
+    .card-img-top {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      background-color: #ffffff;
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    .card-text {
+      color: #555;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+      font-size: 1rem;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    .social-links i {
+      font-size: 1.5rem;
+      margin-right: 15px;
+      color: #007bff;
+    }
+
+    .social-links i:hover {
+      color: #ffcc00;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 40px 0;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #ffcc00;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .scroll-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .scroll-top:hover {
+      background-color: #0056b3;
+    }
+
+    .btn-success {
+      background-color: #28a745;
+      border: none;
+    }
+
+    .btn-success:hover {
+      background-color: #218838;
+    }
+
+    #bookingForm .form-label {
+      font-weight: 600;
+    }
+
+    .card .card-body {
+      padding: 25px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header" class="header sticky-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1>GCTU Event Booking System</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="booking.html" class="active">Book a Venue</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="page-title">
+      <div class="container">
+        <h1>Book a Venue</h1>
+      </div>
+    </div>
+
+    <section class="venues">
+      <div class="container">
+        <div class="row">
+          <!-- Venue 1: Great Hall -->
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <img src="assets/img/venues/great-hall.jpg" class="card-img-top" alt="Great Hall">
+              <div class="card-body">
+                <h5 class="card-title">Great Hall</h5>
+                <p class="card-text">Spacious venue suitable for events with more than 70-80 people. Equipped with modern amenities for large-scale events.</p>
+                <p><strong>Capacity:</strong> 80+ seats</p>
+                <p><strong>Location:</strong> Main Campus</p>
+                <a href="#bookingForm" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Venue 2: Forecourt -->
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <img src="assets/img/venues/forecourt.jpg" class="card-img-top" alt="Forecourt">
+              <div class="card-body">
+                <h5 class="card-title">Forecourt</h5>
+                <p class="card-text">Outdoor venue that accommodates 300-500 people. Ideal for fairs, exhibitions, and large gatherings.</p>
+                <p><strong>Capacity:</strong> 300-500 people</p>
+                <p><strong>Location:</strong> Near Administrative Block</p>
+                <a href="#bookingForm" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Venue 3: Florence Onny Auditorium -->
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <img src="assets/img/venues/florence-onny.jpg" class="card-img-top" alt="Florence Onny Auditorium">
+              <div class="card-body">
+                <h5 class="card-title">Florence Onny Auditorium</h5>
+                <p class="card-text">Modern auditorium perfect for events with 100-150 attendees. Features advanced audio-visual systems.</p>
+                <p><strong>Capacity:</strong> 100-150 seats</p>
+                <p><strong>Location:</strong> East Wing</p>
+                <a href="#bookingForm" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Venue 4: Eve Von Hirsch Auditorium -->
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <img src="assets/img/venues/eve-von-hirsch.jpg" class="card-img-top" alt="Eve Von Hirsch Auditorium">
+              <div class="card-body">
+                <h5 class="card-title">Eve Von Hirsch Auditorium</h5>
+                <p class="card-text">Versatile space for academic and professional events with advanced amenities and a seating capacity of 150-200.</p>
+                <p><strong>Capacity:</strong> 150-200 seats</p>
+                <p><strong>Location:</strong> West Wing</p>
+                <a href="#bookingForm" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="bookingForm" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Fill in the Booking Form</h2>
+        <form action="submit-booking.html" method="POST" class="row g-3">
+          <div class="col-md-6">
+            <label for="venue" class="form-label">Venue</label>
+            <select id="venue" name="venue" class="form-select" required>
+              <option value="Great Hall">Great Hall</option>
+              <option value="Forecourt">Forecourt</option>
+              <option value="Florence Onny Auditorium">Florence Onny Auditorium</option>
+              <option value="Eve Von Hirsch Auditorium">Eve Von Hirsch Auditorium</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div class="col-md-6">
+            <label for="eventDate" class="form-label">Event Date</label>
+            <input type="date" id="eventDate" name="event_date" class="form-control" required>
+          </div>
+          <div class="col-12">
+            <label for="details" class="form-label">Event Details</label>
+            <textarea id="details" name="details" class="form-control" rows="3" placeholder="Provide additional information about your event"></textarea>
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-success">Submit Booking</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+      <p>© GCTU Event Booking System. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
